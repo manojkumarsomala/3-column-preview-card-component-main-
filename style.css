@@ -1,0 +1,105 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --orange:hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Verylightgray: hsl(0, 0%, 95%);
+     font-size: 15px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Verylightgray);
+    font-family: Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+main{
+    display: flex;
+    border-radius: 0.5rem;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem;
+    align-items: flex-start;
+}
+
+.article p{
+    font-family: 'Lexend Deca', sans-serif;
+    max-width: 25ch;
+    color: var(--Verylightgray);
+    opacity: 0.75;
+}
+.article h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+.section-1{
+    background-color: var(--orange);
+}
+.section-2{
+    background-color: var(--Dark-cyan);
+}
+.section-3{
+    background-color: var(--Very-dark-cyan);
+}
+
+.article button{
+    border: 3px solid;
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    color: var(--orange);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+
+.article button:hover{
+    border: 2px solid;
+    background-color: var(--orange);
+    color: var(--Verylightgray);
+    cursor: pointer;
+}
+.section-2 button{
+    color: var(--Dark-cyan);
+}
+
+.section-3 button{
+    color: var(--Very-dark-cyan);
+}
+.section-2 button:hover{
+    background-color: var(--Dark-cyan);
+    color: var(--Verylightgray);
+}
+
+.section-3 button:hover{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Verylightgray);
+}
+
+
+@media (max-width:376px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article button{
+        margin-top: 0rem;
+    }
+    
+}
